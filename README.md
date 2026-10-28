@@ -1,7 +1,33 @@
-# shopping laravel project
+# shopbiz-laravel
 
-1. composer install
-2. php artisan key:gen
-3. php artisan migrate
-4. php artisan db:seed
-5. laravel herd: https://shopbiz.test/panel
+Modular Laravel shop with an admin panel (Blade + Bootstrap 4 / Tailwind assets).
+
+## Stack
+
+- Laravel
+- Modular structure under `Modules/`
+- Blade templates
+- Intervention Image, Sanctum, Socialite, DomPDF, SEO tools
+
+## Setup
+
+```bash
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan db:seed
+```
+
+Optional frontend assets:
+
+```bash
+npm install
+npm run dev
+```
+
+## Admin
+
+With Laravel Herd (or similar), the panel was used at:
+
+`https://shopbiz.test/panel`
